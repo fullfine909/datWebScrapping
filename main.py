@@ -213,7 +213,7 @@ class Scrapper:
         print(finalUrl)
         print('\nSearching cars that match your criteria...')
 
-    # YEAR OF USE TO AGE OF CAR
+    # AGE OF CAR TO  YEAR OF REGISTRATION
     def correctYear(self):
         a = self.filters['Year']['value'][0]
         b = self.filters['Year']['value'][1]
@@ -324,7 +324,7 @@ class Scrapper:
 
 if __name__ == '__main__':
     
-    auto = 1    # 0: ENTER FILTERS HERE. 1: ENTER FILTER WITH INPUTS
+    auto = 1    # 1: ENTER FILTERS HERE. 0: ENTER FILTER WITH INPUTS
     test = [
         'Madrid',       # CITY: CAPITALIZED
         'BMW',          # BRAND: UPPERCASE
